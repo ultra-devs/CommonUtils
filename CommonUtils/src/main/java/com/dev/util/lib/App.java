@@ -1,0 +1,15 @@
+package com.dev.util.lib;
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
+public class App {
+	private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
+
+	public static void main(String[] args) {
+		//checkArgument(args != null, "Expected not null arguments.");
+		LOGGER.info("Hello World!");
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s11:Envelope xmlns:s11="http://schemas.xmlsoap.org/soap/envelope/">
+  <s11:Header>
+  </s11:Header>
+  <s11:Body>
+    <s11:getContractandDiscountRequest/>
+  </s11:Body>
+  </s11:Envelope>
