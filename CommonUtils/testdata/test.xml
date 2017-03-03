@@ -3,6 +3,6 @@
   <s11:Header>
   </s11:Header>
   <s11:Body>
-    <s11:getContractandDiscountRequest/>
+    <s11:getItemListRequest/>
   </s11:Body>
   </s11:Envelope>

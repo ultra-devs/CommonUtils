@@ -7,7 +7,7 @@
  * 
  */
 
-package com.dev.util.lib;
+package com.dev.util.lib.soap;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -17,7 +17,10 @@ import javax.xml.soap.MessageFactory;
 import javax.xml.soap.MimeHeaders;
 import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPMessage;
+
+import org.apache.commons.io.Charsets;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.CharSetUtils;
 /*import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;*/
 
@@ -89,8 +92,11 @@ public class SoapMessageUtils {
 	  public static void main(String[] args) throws Exception { // read an xml
 	//  and send that to getSoapOperationNameFromSoapMessage // read xml string
 	  String xmlReq = FileUtils.readFileToString(new
-	  File("testdata/test.xml"));
+	 //  replace deprecated api call with new 
+	 File("testdata/test.xml"), Charsets.toCharset("UTF-8") );
 	  System.out.println(getSoapNameFromSoapRequestMessage(xmlReq));
+	//  FileUtils.readFileToString(file
+	  
 	  
 	  }
 	 
